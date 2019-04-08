@@ -51,8 +51,14 @@ public class MainActivity extends AppCompatActivity {
         final EditText postCont = findViewById(R.id.postContent);
         final EditText postUser = findViewById(R.id.postName);
         Button btn_send = findViewById(R.id.send);
+        Button te = findViewById(R.id.temp_btn);
         final CustomeAdpater customeAdpater = new CustomeAdpater();
-
+        te.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Temp();
+            }
+        });
         // Add Post
         btn_send.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -223,6 +229,11 @@ public class MainActivity extends AppCompatActivity {
         editPostActivity.putExtra("Content",content);
         editPostActivity.putExtra("PostId",id);
         startActivity(editPostActivity);
+    }
+    private  void Temp()
+    {
+        Intent tt = new Intent(getApplicationContext(),FavoriteTemp.class);
+        startActivity(tt);
     }
 }
 

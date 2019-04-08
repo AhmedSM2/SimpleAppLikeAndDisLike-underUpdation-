@@ -12,7 +12,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EditPostActivity"></activity>
+        <activity android:name=".FavoriteTemp"></activity>
+        <activity
+            android:name=".EditComment"
+            android:label="@string/title_activity_edit_comment"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".EditPostActivity" />
         <activity android:name=".Comment" />
         <activity android:name=".MainActivity">
             <intent-filter>

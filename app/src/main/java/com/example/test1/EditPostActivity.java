@@ -28,7 +28,7 @@ public class EditPostActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String newPost= editText.getText().toString();
-                mPost.child(id).child("/content").setValue(newPost);
+                mPost.child(id).child("content").setValue(newPost);
                 sendUserToPostsActivity();
             }
         });
@@ -37,6 +37,5 @@ public class EditPostActivity extends AppCompatActivity {
     {
         Intent editPostActivity = new Intent(getApplicationContext(),MainActivity.class);
         startActivity(editPostActivity);
-        finish();
     }
 }

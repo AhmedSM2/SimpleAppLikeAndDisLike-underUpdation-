@@ -21,6 +21,17 @@
             android:textColor="@color/colorAccent"
             android:textSize="30dp" />
 
+        <ImageButton
+            android:id="@+id/commentMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_menu"
+            tools:ignore="VectorDrawableCompat" />
+
     </LinearLayout>
 
     <TextView
